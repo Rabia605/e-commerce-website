@@ -1,0 +1,210 @@
+/* General Reset */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+  }
+  
+  /* About Us Section */
+  .about-us {
+    position: relative;
+    width: 100%;
+    height: 300px; /* Adjust height as needed */
+    background: url('../images/img3.jpg') no-repeat center center/cover;
+  }
+  
+  .about-banner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+  }
+  
+  .about-banner h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .about-banner p {
+    font-size: 18px;
+    font-weight: 400;
+    opacity: 0.8;
+  }
+
+
+  /* Stats Section */
+.stats {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+    width: 90%;
+  }
+  
+  .stats-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 25px;
+  }
+  
+  .stat-card {
+    flex: 1 1 calc(25% - 20px);
+    text-align: center;
+    padding: 35px 0px;
+    background-color: #ebebeb;
+    border-radius: 10px;
+    height: 280px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .stat-card img{
+    width: 37%;
+    height: 45%;
+  }
+  .stat-card h3{
+    font-weight: 100;
+    font-size: 20px;
+  }
+  .stat-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+  }
+  
+  .stat-number {
+    font-size: 44px;
+    font-weight: bold;
+    color: black;
+    margin-top: 10px;
+  }
+
+
+  /* About Section Styles */
+  .about-section {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the content */
+    padding: 4rem 2rem;
+    overflow: hidden;
+    height: auto; /* Adjust to fit content */
+    width: 100%; /* Full width */
+    background-color: #ffffff;
+  }
+  
+  .about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center container content */
+    gap: 2rem;
+    flex-wrap: wrap;
+    height: 80vh;
+    width: 100%;
+  }
+  
+  .about-image {
+    position: relative;
+    height: 90%;
+    flex: 0 1 500px; /* Set fixed width for the image section */
+  }
+  
+  .image-background {
+    position: absolute;
+    top: 3%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    background: white; /* Blue color for the rectangle */
+    border: 5px solid #007bff;
+    border-radius: 8px;
+    z-index: 1; /* Place below the main image */
+  }
+  
+  .image-box {
+    position: relative;
+    top: 70px;
+    left: 75px;
+    width: 100%;
+    height: 85%;
+    border-radius: 3px;
+    overflow: hidden;
+    z-index: 2; /* Place above the background */
+  }
+  
+  .main-image {
+    width: 90%;
+    height: 100%;
+    border-radius: 5px; /* Rounded corners for the image */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for the image */
+    position: relative;
+    z-index: 3; /* Ensure it is above everything else */
+  }
+  
+  /* Right Content Section */
+  .about-content {
+    flex: 1 1 50%;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease-in-out;
+    margin-left: 30px;
+    padding-right: 31px;
+  }
+  
+  .about-content h2 {
+    color: #007bff;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  .about-content h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.4;
+  }
+  
+  .about-content .highlight {
+    color: #007bff;
+  }
+  
+  .about-content p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+  }
+  
+  .about-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2rem;
+  }
+  
+  .read-more-btn {
+    background: #007bff;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+  }
+  
+  .read-more-btn:hover {
+    background: #0056b3;
+  }
+  
+  /* Scroll Animation */
+  .about-section.in-view .about-content {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
