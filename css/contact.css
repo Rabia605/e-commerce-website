@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    
+  }
+  section{
+    width:80%;
+    margin:auto;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  }
+  /* Contact Banner */
+  .about-us {
+    position: relative;
+    width: 100%;
+    height: 300px; /* Adjust height as needed */
+    background: url('../images/img3.jpg') no-repeat center center/cover;
+  }
+  
+  .about-banner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+  }
+  
+  .about-banner h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .about-banner p {
+    font-size: 18px;
+    font-weight: 400;
+    opacity: 0.8;
+  }
+
+
+  /* CONtact form */
+  .contact-section {
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .contact-header {
+    font-size: 26px;
+    margin-bottom: 10px;
+   
+  }
+  
+  .contact-paragraph {
+    margin-bottom: 40px;
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
+  .contact-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-left:0px;
+  }
+  
+  .contact-info {
+    flex: 1;
+    padding: 20px;
+    border-radius: 8px;
+    margin-right: 90px;
+  }
+  
+  .contact-form {
+    flex: 1;
+    padding: 30px;
+    width:20%;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-info .info-item {
+    display: flex;
+    align-items: center;
+    margin: 50px 0;
+
+  }
+  
+  .contact-info .icon {
+    font-size: 24px;
+    margin-right: 10px;
+  }
+  .contact-info .icon {
+    width: 40px;  /* Size of the circle */
+    height: 40px; /* Size of the circle */
+    border-radius: 50%; /* Makes the icon background circular */
+    background-color: rgb(201, 179, 140); /* White background for the circle */
+    display: flex;
+    justify-content: center; /* Center the icon inside the circle */
+    align-items: center; /* Center the icon inside the circle */
+    margin-right: 10px; /* Space between the icon and the text */
+    padding: 5px; /* Padding inside the circle */
+  }
+  
+  .contact-info .icon img  {
+    width: 10px;  /* Size of the icon inside the circle */
+    height: 10px; /* Size of the icon inside the circle */
+  }
+  
+  .contact-info h4 {
+    color:#00bcd4;
+    margin-bottom: 5px;
+    text-align: left;
+  }
+  .contact-info p{
+    text-align: left;
+  }
+  
+  .contact-form h3 {
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .contact-form form input,
+  .contact-form form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border:none;
+    border: 1px solid black;
+    border-bottom:2px solid black;
+    outline:none;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .contact-form form textarea {
+    resize: none;
+    height: 100px;
+  }
+  
+  .contact-form form button {
+    background-color:#00bcd4;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .contact-form form button:hover {
+    background-color:#00bcd4;
+  }
+  
+
+  .map-container {
+    margin-top: 40px;
+    width: 100%;
+    height: 400px; /* Set the desired height of the map */
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
